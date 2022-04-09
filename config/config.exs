@@ -36,7 +36,7 @@ config :esbuild,
     env: %{"NODE_PATH" => Path.expand("../deps", __DIR__)}
   ]
 
-  config :tailwind,
+config :tailwind,
   version: "3.0.12",
   default: [
     args: ~w(
@@ -44,7 +44,7 @@ config :esbuild,
       --input=css/app.css
       --output=../priv/static/assets/app.css
     ),
-    cd: Path.expand("../assets", __DIR__),
+    cd: Path.expand("../assets", __DIR__)
   ]
 
 # Configures Elixir's Logger

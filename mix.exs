@@ -36,7 +36,7 @@ defmodule Demo.MixProject do
       {:phoenix, "~> 1.6.6"},
       {:phoenix_html, "~> 3.2"},
       {:phoenix_live_reload, "~> 1.3.3", only: :dev},
-      {:phoenix_live_view, "~> 0.17.7"},
+      {:phoenix_live_view, "~> 0.17.8"},
       {:floki, ">= 0.32.1", only: :test},
       {:phoenix_live_dashboard, "~> 0.6.5"},
       {:esbuild, "~> 0.4", runtime: Mix.env() == :dev},

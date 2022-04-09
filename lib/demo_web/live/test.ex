@@ -3,14 +3,20 @@ defmodule DemoWeb.TestLive do
   # the line below would be: use MyAppWeb, :live_view
   use Phoenix.LiveView
 
-  def render(assigns) do
-    ~H"""
-    Current temperature: <%= @temperature %>
-    <div class="text-lg bg-green-400">HELLO WORLD</div>
-    """
-  end
+  import Phoenix.LiveView.Helpers
+
+  alias DemoWeb.CmdPalleteComponent
 
   def mount(_params, _query, socket) do
     {:ok, assign(socket, :temperature, 34)}
+  end
+
+  def render(assigns) do
+    ~H"""
+    <div>
+      Demo of command pallete
+      <.live_component module={CmdPalleteComponent} id="cmdpallete" content="Hello from" />
+    </div>
+    """
   end
 end
