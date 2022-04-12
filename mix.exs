@@ -46,7 +46,8 @@ defmodule Demo.MixProject do
       {:gettext, "~> 0.19"},
       {:jason, "~> 1.3"},
       {:plug_cowboy, "~> 2.5"},
-      {:tailwind, "~> 0.1.5", runtime: Mix.env() == :dev}
+      {:tailwind, "~> 0.1.5", runtime: Mix.env() == :dev},
+      {:petal_components, "~> 0.14.1"}
     ]
   end
 

@@ -95,6 +95,8 @@ defmodule DemoWeb do
       # Import basic rendering functionality (render, render_layout, etc)
       import Phoenix.View
 
+      use PetalComponents
+
       import DemoWeb.ErrorHelpers
       import DemoWeb.Gettext
       alias DemoWeb.Router.Helpers, as: Routes
